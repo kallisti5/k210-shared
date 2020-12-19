@@ -11,6 +11,12 @@ dependencies = [
 
 [[package]]
 name = "bit_field"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ed8765909f9009617974ab6b7d332625b320b33c326b1e9321382ef1999b5d56"
+
+[[package]]
+name = "bit_field"
 version = "0.10.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dcb6dd1c2376d2e096796e234a70e17e94cc2d5d54ff8ce42b28cef1d0d359a4"
@@ -49,7 +55,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "69b1cda20e843558e892373b1fd01a900232103f65fa4be8f18edcd130dde30e"
 dependencies = [
  "bare-metal",
- "riscv",
+ "riscv 0.5.4",
  "vcell",
 ]
 
@@ -59,7 +65,7 @@ version = "0.1.0"
 dependencies = [
  "k210-hal",
  "libm",
- "riscv",
+ "riscv 0.6.0",
  "riscv-rt",
 ]
 
@@ -140,22 +146,33 @@ checksum = "9c33a3c44ca05fa6f1807d8e6743f3824e8509beca625669633be0acbdf509dc"
 
 [[package]]
 name = "riscv"
-version = "0.5.6"
-source = "git+https://github.com/rust-embedded/riscv.git?rev=422a1625cfd666f927eae485629fa7f96be5ebd0#422a1625cfd666f927eae485629fa7f96be5ebd0"
+version = "0.5.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6bb785ce81e0bd87b8d1d357266eeb03f081d9d5871a31e7f95b7e6fd67002eb"
 dependencies = [
  "bare-metal",
- "bit_field",
+ "bit_field 0.9.0",
+]
+
+[[package]]
+name = "riscv"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a2f0b705d428e9d0f78e2bb73093887ee58a83c9688de3faedbb4c0631c4618e"
+dependencies = [
+ "bare-metal",
+ "bit_field 0.10.1",
  "riscv-target",
 ]
 
 [[package]]
 name = "riscv-rt"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d9e59872da875148c289c8d3d25eb147b640e413d8f0bb34da2355b3f0c995fb"
+checksum = "b7fe583b2216c75d6f35996919c09fd4011fbc8f6bf31e5fbc97483a6aaa8bdd"
 dependencies = [
  "r0",
- "riscv",
+ "riscv 0.6.0",
  "riscv-rt-macros",
  "riscv-target",
 ]
