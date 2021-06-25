@@ -6,6 +6,7 @@ use core::panic::PanicInfo;
 use core::sync::atomic::{self, Ordering};
 
 /** Send panic messages to UARTHS at 115200 baud */
+#[cfg(not(test))]
 #[panic_handler]
 fn panic(info: &PanicInfo) -> ! {
     // Stealing all peripherals, re-initializing the clocks and serial seems overkill here, but
