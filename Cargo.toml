@@ -3,6 +3,12 @@ name = "k210-shared"
 version = "0.2.0"
 authors = ["W.J. van der Laan <laanwj@protonmail.com>"]
 edition = "2018"
+keywords = ["k210", "Kendryte", "Maix"]
+repository = "https://github.com/kallisti5/k210-shared"
+license = "0BSD"
+
+[badges]
+maintenance = { status = "passively-maintained" }
 
 [dependencies]
 k210-hal = "0.2.0"
