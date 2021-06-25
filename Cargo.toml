@@ -11,6 +11,6 @@ riscv = "0.6"
 riscv-rt = "0.8"
 
 [patch.crates-io]
-k210-hal = { git = "https://github.com/riscv-rust/k210-hal.git", rev = "fdf1ad61af8f756765a65133bb2d08cda686be6f" }
+k210-hal = { git = "https://github.com/riscv-rust/k210-hal.git", rev = "98fb51560b8f254709dced87ad5b403b4676f989" }
 # Remove this after https://github.com/ilya-epifanov/riscv-target/pull/1 or similar merged
-riscv-target = { git = "https://github.com/laanwj/riscv-target.git", rev = "189b5261ecdd40f18eb1b82614d6876aa88bd744" }
+#riscv-target = { git = "https://github.com/laanwj/riscv-target.git", rev = "189b5261ecdd40f18eb1b82614d6876aa88bd744" }
